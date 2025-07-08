@@ -1,0 +1,10 @@
+{% load static %}
+    <link rel="stylesheet" href="{% static 'library/style.css' %}">
+<h2>Import Books</h2>
+<form method="post">{% csrf_token %}
+    <label>Title Keyword:</label>
+    <input name="title" />
+    <label>Page:</label>
+    <input name="page" value="1" />
+    <button type="submit">Import</button>
+</form>

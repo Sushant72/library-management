@@ -1,0 +1,8 @@
+{% load static %}
+    <link rel="stylesheet" href="{% static 'library/style.css' %}">
+<h2>Members</h2>
+<ul>
+{% for member in members %}
+    <li>{{ member.name }} - ₹{{ member.debt }}</li>
+{% endfor %}
+</ul>

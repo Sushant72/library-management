@@ -1,0 +1,7 @@
+{% load static %}
+    <link rel="stylesheet" href="{% static 'library/style.css' %}">
+<h1>Library Home</h1>
+<a href="{% url 'book-list' %}">View Books</a> |
+<a href="{% url 'member-list' %}">View Members</a> |
+<a href="{% url 'issue-book' %}">Issue Book</a> |
+<a href="{% url 'import-books' %}">Import Books</a>
